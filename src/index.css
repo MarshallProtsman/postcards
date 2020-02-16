@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(255, 246, 220);
+  color: rgb(0, 0, 0);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* INDIVIDUAL COMPONENT STYLING */
+
+.Home {
+  background-color: rgb(255, 246, 220);
+  display: flex;
+  justify-content: center;
+}
+
+.content-style {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.flex-top {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.btn-clear {
+  border: none;
+  background: transparent;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-scale {
+width: 100vh;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btm-cntr {
+  display: none;
+  justify-content: column-reverse;
+  flex-direction: "co;lumn";
+  justify-content: "flex-end";
+  align-items: "center";;
+  padding-right: "6vw";
+}
+
+.scroll {
+   display: "inline";
+   padding: "5px";
+}
+
+
+/* #welcome {
+  padding-left: 5em;
+} */
+
+/* .btm-cntr {
+  position: absolute;
+  bottom: 0;
+  padding-left: 39vw;
+} */
+
+#down-arrows {
+  animation-duration: 1s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  rotate: 50;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(20%);
+  }
+
+  to {
+    transform: translateY(-10%);
+  }
+}
