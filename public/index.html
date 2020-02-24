@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="fullpage.css" />
-    <title>Marshall Protsman</title>
+    <title>POSTCARDS</title>
 </head>
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,6 +40,30 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD2Fyhvz8myMmYpRPJg6FtDCH4LuGT0lTo",
+    authDomain: "postcards-aamm.firebaseapp.com",
+    databaseURL: "https://postcards-aamm.firebaseio.com",
+    projectId: "postcards-aamm",
+    storageBucket: "postcards-aamm.appspot.com",
+    messagingSenderId: "526900366108",
+    appId: "1:526900366108:web:68d424777422f79f1848d9",
+    measurementId: "G-9XN0S1CB2J"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  </body>
 
 </html>

@@ -1,39 +1,12 @@
 import React from "react";
 import "./Landing.css";
 import ReactFullpage from "@fullpage/react-fullpage";
-import Home from "../Home";
+import Home from "../Card";
 import Front from '../Card2'
 import Content from "../Content";
-// import NavMenu from '../NavMenu'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-// import NavBar from '../NavMenu';
 
-// const scroll = {
-//   display: "inline",
-//   padding: "5px"
-// };
-
-// const contentStyle = {
-//   display: "flex",
-//   // flexDirection: 'row',
-//   justifyContent: "space-around",
-//   alignItems: "center",
-//   height: "80vh",
-//   width: "92vw",
-//   marginTop: '20px',
-//   borderStyle: "solid",
-//   borderWidth: "1px"
-// };
-
-// const btmCntr = {
-//   display: "flex",
-//   flexDirection: "column",
-//   justifyContent: "flex-end",
-//   alignItems: "center",
-//   paddingRight: "6vw"
-//   /* padding-left: '39vw' */
-// };
 
 const Fullpage = () => (
   <ReactFullpage
@@ -48,8 +21,8 @@ const Fullpage = () => (
             <div className="content-style">
             {/* <NavMenu /> */}
               <div className="title">
-                <h2>Postcards</h2>
-                <h4>Stone Mountain Park Auto Museum</h4>              
+                <h2>Postcards from:</h2>
+                <h4>The Stone Mountain Auto & Music  Museum</h4>              
             </div>
             <div className = 'btm-cntr'>
             <div className='btm-cntr' onClick={() => fullpageApi.moveSectionDown()}>
