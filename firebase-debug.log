@@ -1,0 +1,33 @@
+[debug] [2020-02-24T16:50:28.268Z] ----------------------------------------------------------------------
+[debug] [2020-02-24T16:50:28.270Z] Command:       /usr/local/Cellar/node/11.14.0_1/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-02-24T16:50:28.270Z] CLI Version:   7.13.1
+[debug] [2020-02-24T16:50:28.270Z] Platform:      darwin
+[debug] [2020-02-24T16:50:28.271Z] Node Version:  v11.14.0
+[debug] [2020-02-24T16:50:28.271Z] Time:          Mon Feb 24 2020 11:50:28 GMT-0500 (Eastern Standard Time)
+[debug] [2020-02-24T16:50:28.271Z] ----------------------------------------------------------------------
+[debug] [2020-02-24T16:50:28.271Z] 
+[debug] [2020-02-24T16:50:28.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-24T16:50:28.279Z] > authorizing via signed-in user
+[debug] [2020-02-24T16:50:28.279Z] [iam] checking project postcards-aamm for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-24T16:50:28.281Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/postcards-aamm:testIamPermissions  
+
+[debug] [2020-02-24T16:50:28.469Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-24T16:50:28.472Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/postcards-aamm  
+ 
+[debug] [2020-02-24T16:50:28.602Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'postcards-aamm'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-02-24T16:50:28.606Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/postcards-aamm/versions  
+
+[debug] [2020-02-24T16:50:29.695Z] <<< HTTP RESPONSE 200
+[info] i  hosting[postcards-aamm]: beginning deploy...
+[info] i  hosting[postcards-aamm]: found 7 files in public
+[debug] [2020-02-24T16:50:31.840Z] [hosting] hash cache [cHVibGlj] stored for 7 files
+[debug] [2020-02-24T16:50:31.840Z] [hosting][hash queue][FINAL]
+[debug] [2020-02-24T16:50:31.840Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/postcards-aamm/versions/513b89d47ae875a7:populateFiles  
+ <request body omitted>
+[debug] [2020-02-24T16:50:32.304Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-24T16:50:32.309Z] [hosting][populate queue][FINAL]
+[debug] [2020-02-24T16:50:32.309Z] [hosting] uploads queued: 3

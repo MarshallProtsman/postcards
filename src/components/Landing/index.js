@@ -16,7 +16,7 @@ const Fullpage = () => (
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
-          <div className="section" id="welcome">
+          <div className="section home-section" id="welcome">
             <Content />
             <div className="content-style">
             {/* <NavMenu /> */}
@@ -33,10 +33,10 @@ const Fullpage = () => (
             </div>
             </div>
           </div>
-          <div className="section">
+          <div className="section section2">
             <Home />
           </div>
-          <div className="section">
+          <div className="section section3">
           <div className="ContentStyle">
             <Front />
 

@@ -24,11 +24,23 @@ li {
 
 /* INDIVIDUAL COMPONENT STYLING */
 
-.Home {
-  background-color: rgb(255, 246, 220);
+
+/* Individual sections */
+.home-section {
+  background-color: #E3D0AC;
   display: flex;
   justify-content: center;
 }
+
+.section2 {
+  background-color: rgb(255, 246, 220);
+  /* background-image: url("https://www.publicdomainpictures.net/pictures/310000/velka/damask-vintage-background-wallpaper-1566400309WS6.jpg") ; */
+}
+
+.section3 {
+  background-color:#DEF8EC;
+}
+
 
 .content-style {
   display: flex;
