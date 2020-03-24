@@ -1,5 +1,5 @@
 import React from 'react';
-import Front from '../../images/Front.png'
+import Front from '../../images/FrontComp1.png'
 import './index.css'
 
 function Card2( props ) {
