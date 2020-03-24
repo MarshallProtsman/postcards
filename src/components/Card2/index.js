@@ -6,10 +6,10 @@ function Card2( props ) {
     return (
       <div className = 'direction'>
     <div className="Content Home card2">
-      <img src = {Front} alt = 'Front' className = 'image-scale flex-center'></img>
+      <img src = {props.src} alt = {props.alt} className = 'image-scale flex-center'></img>
 
     </div>
-      <p>A 1933 model C Ford Roadster and a 1930 Rolls Royce Town Car, 20-25 Series.</p>
+    <p>{props.text}</p>
     </div>
     
     )
