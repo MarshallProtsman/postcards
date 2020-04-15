@@ -1,24 +1,31 @@
-import React from 'react';
-import Photos from "../../images.js";
-// import Tommy from '../../images/TommyAndElizabethComp1.png';
-// import './index.css'
+import React from "react";
+import Photos from "../../images";
 
-console.log(Photos[0].image_src)
 
-//Need to pass images, background color, and reverse images in as props.
 
-function Card1( props ) {
-    return (
-      <div className = 'direction'>
-    <div className="Content Home card2">
-      <img src = {props.src} alt = {props.alt} className = 'image-scale flex-center'></img>
-      {/* <img src = {Tommy} alt = 'Front' className = 'image-scale flex-center'></img> */}
+console.log(`>>>> ${Photos[0].alt}`);
 
-    </div>
-    <p>{props.text}</p>
-    </div>
-    
-    )
+class ImageSections extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      photos: { Photos }
+    }
+  }
 }
 
-export default Card1
+function ImageSection( { Photos } ) {
+
+  return (
+  <ul>
+    {Photos.map((photo, index) => {
+    const {
+      image_src, alt, description
+    } = photo
+
+  })}
+  </ul>
+  )
+}
+
+export default ImageSection;

@@ -22,6 +22,7 @@ li {
   list-style-type: none;
 }
 
+
 /* INDIVIDUAL COMPONENT STYLING */
 
 
@@ -39,6 +40,10 @@ li {
 
 .section3 {
   background-color:#DEF8EC;
+}
+
+.paper-bg {
+
 }
 
 
