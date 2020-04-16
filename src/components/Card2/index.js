@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 
 function Card2(props) {
+
   return (
     <div className="direction">
       <div className="card2">

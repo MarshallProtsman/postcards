@@ -1,9 +1,11 @@
 import Tommy from "./images/TommyAndElizabethComp1.png"
+import TommyR from "./images/TommyAndElizabeth-Reverse.png"
 import Front from "./images/FrontComp1.png"
 
 const Photos = [
     {
     image_src: Tommy,
+    image_reverse: TommyR,
     title: "Tommy And Elizabeth 1908 Buick",
     alt: "Tommy And Elizabeth 1908 Buick",
     description:

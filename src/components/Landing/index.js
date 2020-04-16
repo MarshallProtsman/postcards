@@ -1,42 +1,26 @@
 import React from "react";
 import "./Landing.css";
 import ReactFullpage from "@fullpage/react-fullpage";
-// import Home from "../Card2";
-import Card from "../Card2";
 import Content from "../Content";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Photos from "../../images.js";
 
-import PaperBG from "../../images/assets/groovepaper/groovepaper.png"
+// import Card1 from "../Card"
+import Card2 from "../Card2";
+
+import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
 // import PaperBG from "../../images/assets/embossed_paper/embossed_paper.png"
 // import PaperBG from "../../images/assets/lightpaperfibers/lightpaperfibers_@2X.png"
 
+// Background Image Styling
 const CardStyle = {
-  backgroundImage : 'url(' + PaperBG + ')',
+  backgroundImage: "url(" + PaperBG + ")",
 };
-// import ImageSection from "../Card"
 
-// class Card extends React.Component {
-//   constructor(props){
-//     super(props);
-
-//     this.state = {
-//       photos: {
-//         Photos
-//       }
-//     }
-//     return(
-//       <>
-//       <div>
-//         Hello
-//         </div>
-//       </>
-//     )
-//   }
-// }
-
-// function Card( { photo } )
+this.state = {
+  clicked: false
+}
 
 const Fullpage = () => (
   <ReactFullpage
@@ -46,8 +30,8 @@ const Fullpage = () => (
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
-          <div className="section home-section" id="welcome" style = {CardStyle}>
-            <Content/>
+          <div className="section home-section" id="welcome">
+            <Content />
             <div className="content-style">
               {/* <NavMenu /> */}
               <div className="title">
@@ -66,24 +50,21 @@ const Fullpage = () => (
               </div>
             </div>
           </div>
-          <div className="section section2" style = {CardStyle}>
-            {/* <Card /> */}
-            {/* <ImageSection /> */}
-            <Card
-              src={Photos[0].image_src}
-              alt={Photos[0].alt}
-              text={Photos[0].description}
-            />
-          </div>
-          <div className="section section3">
-            <div className="ContentStyle">
-              <Card
-                src={Photos[1].image_src}
-                alt={Photos[1].alt}
-                text={Photos[1].description}
-              />
-            </div>
-          </div>
+
+          {Photos.map((photo, index) => {
+            return (
+              <div className={`section section${index}`} style={CardStyle}>
+                <Card2
+                  src={this.state.clicked === true ? photo.image_src : photo.image_reverse}
+                  // src={photo.image_src}
+                  alt={photo.alt}
+                  text={photo.description}
+                />
+              </div>
+            );
+          })}
+
+         
         </ReactFullpage.Wrapper>
       );
     }}
