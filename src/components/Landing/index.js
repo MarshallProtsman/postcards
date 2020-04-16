@@ -18,9 +18,6 @@ const CardStyle = {
   backgroundImage: "url(" + PaperBG + ")",
 };
 
-this.state = {
-  clicked: false
-}
 
 const Fullpage = () => (
   <ReactFullpage
@@ -55,8 +52,8 @@ const Fullpage = () => (
             return (
               <div className={`section section${index}`} style={CardStyle}>
                 <Card2
-                  src={this.state.clicked === true ? photo.image_src : photo.image_reverse}
-                  // src={photo.image_src}
+                  // src={this.state.clicked === true ? photo.image_src : photo.image_reverse}
+                  src={photo.image_src}
                   alt={photo.alt}
                   text={photo.description}
                 />
