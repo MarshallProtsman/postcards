@@ -7,7 +7,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Photos from "../../images.js";
 
 // import Card1 from "../Card"
-import Card2 from "../Card2";
+import Card2 from "../Card";
 
 import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
 // import PaperBG from "../../images/assets/embossed_paper/embossed_paper.png"
@@ -18,7 +18,6 @@ const CardStyle = {
   backgroundImage: "url(" + PaperBG + ")",
 };
 
-
 const Fullpage = () => (
   <ReactFullpage
     //fullpage options
@@ -27,13 +26,15 @@ const Fullpage = () => (
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
-          <div className="section home-section" id="welcome">
+          <div className="section home-section" style={CardStyle} id="welcome">
             <Content />
             <div className="content-style">
               {/* <NavMenu /> */}
               <div className="title">
-                <h2>Postcards from:</h2>
-                <h4>The Stone Mountain Auto & Music Museum</h4>
+                {/* <p className="main-title">POSTCARDS<br></br>FROM<br></br>MY<br></br>GRANDFATHER</p> */}
+                <p className="main-title">Postcards<br></br>from<br></br>my<br></br>grandfather.</p>
+                <br></br>
+                <h4 className="flex-left">The Stone Mountain Park Auto & Music Museum</h4>
               </div>
               <div className="btm-cntr">
                 <div
@@ -52,16 +53,14 @@ const Fullpage = () => (
             return (
               <div className={`section section${index}`} style={CardStyle}>
                 <Card2
-                  // src={this.state.clicked === true ? photo.image_src : photo.image_reverse}
-                  src={photo.image_src}
+                  src1={photo.image_src}
+                  src2={photo.image_reverse}
                   alt={photo.alt}
                   text={photo.description}
                 />
               </div>
             );
           })}
-
-         
         </ReactFullpage.Wrapper>
       );
     }}
