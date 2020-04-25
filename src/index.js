@@ -4,10 +4,12 @@ import ReactDOM from 'react-dom';
 // import Home from './components/Home';
 // import NavMenu from './components/NavMenu';
 // import FourOhFour from './components/404';
-// import Landing from './App';
 import './index.css';
 import Fullpage from './components/Landing'
-import * as firebase from 'firebase';
+// import * as firebase from 'firebase';
+
+const firebase = require('firebase/app');
+require('firebase/database');
 
 const config = {
     apiKey: "AIzaSyD2Fyhvz8myMmYpRPJg6FtDCH4LuGT0lTo",
@@ -21,7 +23,24 @@ const config = {
 };
 
 firebase.initializeApp(config);
+console.log(firebase);
 
+var database = firebase.database();
+var ref = database.ref("postcards")
+
+ref.on('value', gotData, errData)
+
+function gotData(data) {
+console.log(`Heather look here >>>>>>>> ${data.val().Femo9MeefOLq5hOsc3CM}`)
+}
+
+function errData(err) {
+    console.log(err)
+}
+
+
+
+console.log(`ref === ${ref}`)
 // const routing = (
 
 // {/* <Router>

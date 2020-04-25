@@ -1,9 +1,8 @@
 import React from "react";
 import "./index.css";
 
-function Card2(props) {
+function Card(props) {
   const [side, setSide] = React.useState("front");
-  console.log(side);
   const toBack = () => setSide("back");
   const toFront = () => setSide("front");
 
@@ -29,4 +28,4 @@ function Card2(props) {
   );
 }
 
-export default Card2;
+export default Card;

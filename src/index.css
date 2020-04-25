@@ -40,6 +40,15 @@ li {
 display: flex;
 }
 
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  margin: 15px;
+}
+
 .main-title {
   display: flex;
   justify-content: left;
@@ -108,14 +117,6 @@ display: flex;
 
 .image-scale {
 width: 100vh;
-}
-
-.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: left;
-  margin: 15px;
 }
 
 .direction {
