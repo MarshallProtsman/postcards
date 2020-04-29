@@ -12,6 +12,8 @@ import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
 // Background Image Styling
 const CardStyle = {
   backgroundImage: "url(" + PaperBG + ")",
+  // filter: "grayscale()"
+
 };
 
 const Fullpage = () => (
@@ -25,7 +27,6 @@ const Fullpage = () => (
           <div className="section home-section" style={CardStyle} id="welcome">
             <Content />
             <div className="content-style">
-              {/* <NavMenu /> */}
               <div className="title">
                 {/* <p className="main-title">POSTCARDS<br></br>FROM<br></br>MY<br></br>GRANDFATHER</p> */}
                 <p className="main-title">Postcards<br></br>from<br></br>my<br></br>grandfather.</p>

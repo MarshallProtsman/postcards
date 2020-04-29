@@ -1,14 +1,16 @@
 import React from "react";
 import "./index.css";
 
-function Card(props) {
+function Card( props ) {
   const [side, setSide] = React.useState("front");
   const toBack = () => setSide("back");
   const toFront = () => setSide("front");
 
   return (
     <div className="direction">
-      <div className="card2">
+      <div id="overlay">
+      </div>
+      <div className="card2 postcard">
               {side === "front"
               ? <img
               onClick={toBack}
