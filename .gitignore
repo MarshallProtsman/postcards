@@ -6,3 +6,5 @@ node_modules/
 images/
 
 project_files/
+
+firebaseconfig.js

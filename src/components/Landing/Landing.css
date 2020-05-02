@@ -1,0 +1,9 @@
+.postcard {
+    filter: grayscale();
+    transition: filter .5s;
+}
+
+.postcard:hover {
+  filter: grayscale(0);
+  transition: filter .5s;
+}

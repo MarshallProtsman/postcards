@@ -6,41 +6,39 @@ import ReactDOM from 'react-dom';
 // import FourOhFour from './components/404';
 import './index.css';
 import Fullpage from './components/Landing'
-// import * as firebase from 'firebase';
+// import config from "./firebaseconfig"
 
-const firebase = require('firebase/app');
-require('firebase/database');
+// const firebase = require('firebase/app');
+// require('firebase/database');
 
-const config = {
-    apiKey: "AIzaSyD2Fyhvz8myMmYpRPJg6FtDCH4LuGT0lTo",
-    authDomain: "postcards-aamm.firebaseapp.com",
-    databaseURL: "https://postcards-aamm.firebaseio.com",
-    projectId: "postcards-aamm",
-    storageBucket: "postcards-aamm.appspot.com",
-    messagingSenderId: "526900366108",
-    appId: "1:526900366108:web:68d424777422f79f1848d9",
-    measurementId: "G-9XN0S1CB2J"
-};
+// firebase.initializeApp(config);
+// console.log(firebase);
 
-firebase.initializeApp(config);
-console.log(firebase);
+// var database = firebase.database();
+// var ref = database.ref("postcards")
 
-var database = firebase.database();
-var ref = database.ref("postcards")
+// ref.on('value', gotData, errData)
 
-ref.on('value', gotData, errData)
+// function gotData(data) {
+// console.log(`Heather look here >>>>>>>> ${data.val().Femo9MeefOLq5hOsc3CM[0].image_src}`)
+// }
 
-function gotData(data) {
-console.log(`Heather look here >>>>>>>> ${data.val().Femo9MeefOLq5hOsc3CM}`)
-}
+// function errData(err) {
+//     console.log(err)
+// }
 
-function errData(err) {
-    console.log(err)
-}
+// function fetchData() {
+// fetch('https://postcards-aamm.firebaseio.com')
+//   .then(response => response.json())
+//   .then(data => console.log(`Data => ${data}`));
+// }
+
+// fetchData()
 
 
 
-console.log(`ref === ${ref}`)
+
+// console.log(`ref === ${ref}`)
 // const routing = (
 
 // {/* <Router>
