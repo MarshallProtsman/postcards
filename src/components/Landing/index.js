@@ -6,15 +6,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Photos from "../../images.json";
 import Card from "../Card";
-
 import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
+
+import imageDataArr from "../../config/getFirebaseData"
 
 // Background Image Styling
 const CardStyle = {
-  backgroundImage: "url(" + PaperBG + ")",
-  // filter: "grayscale()"
-
+  backgroundImage: `url(${PaperBG})`,
 };
+
+// Firebase data
+console.log(imageDataArr)
 
 const Fullpage = () => (
   <ReactFullpage
