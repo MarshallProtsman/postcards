@@ -6,17 +6,32 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Photos from "../../images.json";
 import Card from "../Card";
-import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
+// import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
 
-import imageDataArr from "../../config/getFirebaseData"
+import imageDataArr from "../../config/getFirebaseData";
 
 // Background Image Styling
 const CardStyle = {
-  backgroundImage: `url(${PaperBG})`,
+  // backgroundImage: `url(${PaperBG})`,
 };
 
 // Firebase data
-console.log(imageDataArr)
+// Currently can't use data D:
+
+function waitToLog(x) {
+  setTimeout(() => {
+    console.log(imageDataArr);
+  }, x);
+}
+
+waitToLog(4000)
+
+console.log(imageDataArr);
+
+// imageDataArr.map((photo, index) =>{
+//   const {alt, description, image_src, image_reverse} = photo
+//   console.log(alt)
+// })
 
 const Fullpage = () => (
   <ReactFullpage
@@ -31,9 +46,13 @@ const Fullpage = () => (
             <div className="content-style">
               <div className="title">
                 {/* <p className="main-title">POSTCARDS<br></br>FROM<br></br>MY<br></br>GRANDFATHER</p> */}
-                <p className="main-title">Postcards<br></br>from<br></br>my<br></br>grandfather.</p>
+                <p className="main-title">
+                  Postcards<br></br>from<br></br>my<br></br>grandfather.
+                </p>
                 <br></br>
-                <h4 className="flex-left">The Stone Mountain Park Auto Museum</h4>
+                <h4 className="flex-left subtitle">
+                  The Stone Mountain Park Auto Museum
+                </h4>
               </div>
               <div className="btm-cntr">
                 <div
@@ -50,7 +69,11 @@ const Fullpage = () => (
 
           {Photos.map((photo, index) => {
             return (
-              <div className={`section section${index}`} style={CardStyle} key={index}>
+              <div
+                className={`section section${index}`}
+                style={CardStyle}
+                key={index}
+              >
                 <Card
                   src1={photo.image_src}
                   src2={photo.image_reverse}

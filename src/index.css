@@ -53,7 +53,7 @@ display: flex;
   display: flex;
   justify-content: left;
   font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 150px;
+  font-size: 9.57em;
   color: #DC2C21;
   line-height: 130px;
 }
@@ -66,16 +66,13 @@ display: flex;
 }
 
 .section1 {
-  background-color: rgb(255, 246, 220);
+  background-color:#DEF8EC;
+
   /* background-image: url("https://www.publicdomainpictures.net/pictures/310000/velka/damask-vintage-background-wallpaper-1566400309WS6.jpg") ; */
 }
 
 .section0 {
-  background-color:#DEF8EC;
-}
-
-.paper-bg {
-
+  background-color: rgb(255, 246, 220);
 }
 
 
@@ -100,7 +97,7 @@ display: flex;
 .flex-left {
   display: flex;
   justify-content: left;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   }
 
 .btn-clear {
@@ -166,4 +163,34 @@ width: 100vh;
   to {
     transform: translateY(-10%);
   }
+}
+
+@media screen and (max-width: 850px) {
+  .main-title {
+    display: flex;
+    justify-content: left;
+    font-family: -apple-system, "Helvetica Neue", sans-serif;
+    font-size: 12vw;
+    color: #DC2C21;
+    line-height: .95em;
+    width: 80%;
+  }
+
+  .subtitle {
+    font-size: 4vw;
+    width: 50vw;
+    margin-left: 5px;
+  }
+
+  .title {
+    width: 80%;
+  }
+
+  .postcard {
+   width: 80vw;
+  }
+
+  .image-scale {
+    width: 90vw;
+}
 }
