@@ -1,51 +1,51 @@
 import React from "react";
 import "./Landing.css";
 import ReactFullpage from "@fullpage/react-fullpage";
-import Content from "../Content";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import Photos from "../../images.json";
-import Card from "../Card";
-// import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
 
-import imageDataArr from "../../config/getFirebaseData";
+// import Photos from "../../images.json";
+
+import IsLoaded from "../IsLoaded";
+// import Card from "../Card";
+
+import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
+
+// import config from "../../config/firebaseconfig";
+// import firebase from "firebase/app";
+import "firebase/database";
+
+// import imageDataArr from "../../config/getFirebaseData";
+// import getFirebaseData from "../../config/getFirebaseData";
 
 // Background Image Styling
 const CardStyle = {
-  // backgroundImage: `url(${PaperBG})`,
+  backgroundImage: `url(${PaperBG})`,
 };
 
-// Firebase data
-// Currently can't use data D:
+// function waitToLog(x) {
+//   setTimeout(() => {
+//     console.log(`wait to log ${x / 1000} seconds`);
+//     console.log(imageDataArr);
+//   }, x);
+// }
 
-function waitToLog(x) {
-  setTimeout(() => {
-    console.log(imageDataArr);
-  }, x);
-}
-
-waitToLog(4000)
-
-console.log(imageDataArr);
-
-// imageDataArr.map((photo, index) =>{
-//   const {alt, description, image_src, image_reverse} = photo
-//   console.log(alt)
-// })
+// waitToLog(2000);
 
 const Fullpage = () => (
   <ReactFullpage
     //fullpage options
     licenseKey={"494BD911-8A8E42B4-8F69FCD9-30D8E5A8"}
     scrollingSpeed={700} /* Options here */
+    navigation={true}
+    // onLeave={origin}
     render={({ state, fullpageApi }) => {
       return (
         <ReactFullpage.Wrapper>
           <div className="section home-section" style={CardStyle} id="welcome">
-            <Content />
             <div className="content-style">
               <div className="title">
-                {/* <p className="main-title">POSTCARDS<br></br>FROM<br></br>MY<br></br>GRANDFATHER</p> */}
                 <p className="main-title">
                   Postcards<br></br>from<br></br>my<br></br>grandfather.
                 </p>
@@ -67,22 +67,25 @@ const Fullpage = () => (
             </div>
           </div>
 
-          {Photos.map((photo, index) => {
-            return (
-              <div
-                className={`section section${index}`}
-                style={CardStyle}
-                key={index}
-              >
-                <Card
-                  src1={photo.image_src}
-                  src2={photo.image_reverse}
-                  alt={photo.alt}
-                  text={photo.description}
-                />
-              </div>
-            );
-          })}
+          {/* Mapping over DB to render postcard slides */}
+          <IsLoaded />
+          {/* {Photos.map((photo, index) => {
+              return (
+                <div
+                  className={`section section${index}`}
+                  style={CardStyle}
+                  key={index}
+                >
+                  <Card
+                    src1={photo.image_src}
+                    src2={photo.image_reverse}
+                    alt={photo.alt}
+                    text={photo.description}
+                  />
+                </div>
+              );
+            })
+          } */}
         </ReactFullpage.Wrapper>
       );
     }}
