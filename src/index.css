@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgb(255, 246, 220);
@@ -9,16 +8,20 @@ body {
 }
 
 h1 {
-font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
 }
 
 h4 {
-  font-family: -apple-system, Lora, Karla-Regular, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, Lora, Karla-Regular, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 p {
-  font-family: -apple-system, Lora, Karla-Regular, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+  font-family: -apple-system, Lora, Karla-Regular, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  width: 60%;
 }
 
 code {
@@ -34,12 +37,10 @@ li {
   list-style-type: none;
 }
 
-
 /* INDIVIDUAL COMPONENT STYLING */
 .title {
-display: flex;
+  display: flex;
 }
-
 
 .title {
   display: flex;
@@ -54,19 +55,19 @@ display: flex;
   justify-content: left;
   font-family: -apple-system, "Helvetica Neue", sans-serif;
   font-size: 9.57em;
-  color: #DC2C21;
+  color: #dc2c21;
   line-height: 130px;
 }
 
 /* Individual sections */
 .home-section {
-  background-color: #E6DFD0;
+  background-color: #e6dfd0;
   display: flex;
   /* justify-content: left; */
 }
 
 .section1 {
-  background-color:#DEF8EC;
+  background-color: #def8ec;
 
   /* background-image: url("https://www.publicdomainpictures.net/pictures/310000/velka/damask-vintage-background-wallpaper-1566400309WS6.jpg") ; */
 }
@@ -74,7 +75,6 @@ display: flex;
 .section0 {
   background-color: rgb(255, 246, 220);
 }
-
 
 .content-style {
   display: flex;
@@ -86,7 +86,7 @@ display: flex;
 .flex-center {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .flex-top {
@@ -98,7 +98,7 @@ display: flex;
   display: flex;
   justify-content: left;
   /* margin-left: 10px; */
-  }
+}
 
 .btn-clear {
   border: none;
@@ -113,7 +113,7 @@ display: flex;
 }
 
 .image-scale {
-width: 100vh;
+  width: 100vh;
 }
 
 .direction {
@@ -127,15 +127,14 @@ width: 100vh;
   justify-content: column-reverse;
   flex-direction: "co;lumn";
   justify-content: "flex-end";
-  align-items: "center";;
+  align-items: "center";
   padding-right: "6vw";
 }
 
 .scroll {
-   display: "inline";
-   padding: "5px";
+  display: "inline";
+  padding: "5px";
 }
-
 
 /* #welcome {
   padding-left: 5em;
@@ -171,9 +170,12 @@ width: 100vh;
     justify-content: left;
     font-family: -apple-system, "Helvetica Neue", sans-serif;
     font-size: 12vw;
-    color: #DC2C21;
-    line-height: .95em;
+    color: #dc2c21;
+    line-height: 0.95em;
     width: 80%;
+    background: linear-gradient(to bottom, rgb(220, 44, 33), rgb(175, 37, 27));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .subtitle {
@@ -187,10 +189,10 @@ width: 100vh;
   }
 
   .postcard {
-   width: 80vw;
+    width: 80vw;
   }
 
   .image-scale {
     width: 90vw;
-}
+  }
 }
