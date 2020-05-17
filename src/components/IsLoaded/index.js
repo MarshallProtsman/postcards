@@ -26,21 +26,35 @@ export default class DataLoaded extends React.Component {
     const app = firebase.initializeApp(config);
     const db = app.database();
 
-    console.log(`this.state.data`);
-    console.log(this.state.data);
-    console.log(`this.state.data`);
+    // make the following return a promise?
 
-    db.ref("/postcards/").on("value", (querySnapShot) => {
-      imageDataArr = querySnapShot.val();
-    });
+    function getTheData() {
+      return new Promise(function (resolve, reject) {
+        db.ref("/postcards/")
+          .once("value")
+          .then(function (snapshot) {
+            imageDataArr = snapshot.val();
+            console.log(imageDataArr); // still logging the datat I want
+            if (imageDataArr !== []) {
+              return resolve();
+            } else {
+              return reject();
+            }
+            // giving error "Cannot read property 'setState' of undefined"
+          });
+      });
+    }
 
-    // needs to return a promise and do .then(this.setState()) ???
+    getTheData().then(console.log("Resolved"));
 
-    // this.setState({ isLoaded: true, data: imageDataArr });
+    // db.ref("/postcards/").on("value", (querySnapShot) => {
+    //   imageDataArr = querySnapShot.val();
+    //   console.log(imageDataArr);  // Logs the data I want :)
+    // });
 
-    console.log(imageDataArr);
-    console.log(this.state.data);
-    console.log(this.state.isLoaded);
+    // ?? maybe needs to return a promise and do .then(this.setState()) ???
+    console.log(this.state.data); // logs []
+    console.log(this.state.isLoaded); // logs false
   }
 
   render() {
