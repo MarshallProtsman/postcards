@@ -5,10 +5,10 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-// import Photos from "../../images.json";
+import Photos from "../../images.json";
 
-import IsLoaded from "../IsLoaded";
-// import Card from "../Card";
+// import IsLoaded from "../IsLoaded";
+import Card from "../Card";
 
 import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
 
@@ -68,8 +68,8 @@ const Fullpage = () => (
           </div>
 
           {/* Mapping over DB to render postcard slides */}
-          <IsLoaded />
-          {/* {Photos.map((photo, index) => {
+          {/* <IsLoaded /> */}
+          {Photos.map((photo, index) => {
               return (
                 <div
                   className={`section section${index}`}
@@ -85,7 +85,7 @@ const Fullpage = () => (
                 </div>
               );
             })
-          } */}
+          }
         </ReactFullpage.Wrapper>
       );
     }}
