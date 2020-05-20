@@ -72,7 +72,7 @@ const Fullpage = () => (
           {Photos.map((photo, index) => {
               return (
                 <div
-                  className={`section section${index}`}
+                  className={`section flex-center section${index}`}
                   style={CardStyle}
                   key={index}
                 >

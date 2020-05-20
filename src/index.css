@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, "lockdown", sans-serif;
 }
 
 h4 {
@@ -38,9 +38,6 @@ li {
 }
 
 /* INDIVIDUAL COMPONENT STYLING */
-.title {
-  display: flex;
-}
 
 .title {
   display: flex;
@@ -50,21 +47,11 @@ li {
   margin: 15px;
 }
 
-.active {
-  position: fixed;
-  /* top: 0;
-  left: 0; */
-  z-index: 1;
-  opacity: 100;
-}
-
-.inactive {
-  background-color: red;
-  position: fixed;
-  /* top: 0;
-  left: 0; */
-  z-index: 0;
-  opacity: 0;
+.center-text {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 .main-title {
@@ -98,10 +85,36 @@ li {
   flex-direction: column;
 }
 
+/* IMAGE TOGGLE CLASSES */
+.active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 100;
+  transition: opacity .3s
+
+}
+
+.inactive {
+  /* background-color: red; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity .3s
+}
+
+.flex-child {
+  position: relative;
+}
+
 /* FLEXING */
 
 .flex-center {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -133,11 +146,11 @@ li {
   width: 100vh;
 }
 
-.direction {
+/* .direction {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .btm-cntr {
   display: none;

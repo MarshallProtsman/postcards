@@ -24,14 +24,6 @@
       "This 1920 Hanson Touring was made in Atlanta Georgia."
   },
   {
-    "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407123/Postcards/Brass/Brass_w7lx8t.png",
-    "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407122/Postcards/Brass/Brass_R_jimpxd.png",
-    "title": "Brass Collection",
-    "alt": "Brass Collection",
-    "description":
-      "One section of the museum's collection of brass horns, head lamps, tail lamps, and motor meters. Considered to be the world's largest and finest collection."
-  },
-  {
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589406797/Postcards/Tucker/Tucker_krkl2i.png",
     "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589406797/Postcards/Tucker/Tucker_R_oa4ygr.png",
     "title": "Tucker",
@@ -102,5 +94,13 @@
     "alt": "1904 Oldsmobile Truck",
     "description":
       "A 1904 curved dash Oldsmobile truck. One of the rarest American antique cars."
+  },
+  {
+    "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407123/Postcards/Brass/Brass_w7lx8t.png",
+    "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407122/Postcards/Brass/Brass_R_jimpxd.png",
+    "title": "Brass Collection",
+    "alt": "Brass Collection",
+    "description":
+      "One section of the museum's collection of brass horns, head lamps, tail lamps, and motor meters. Considered to be the world's largest and finest collection."
   }
 ]
