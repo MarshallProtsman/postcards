@@ -3,6 +3,8 @@ import "./index.css";
 import Loading from "../Loading";
 // import Loaded from "../Loaded";
 import Card from "../Card";
+import Loaded from "../Loaded";
+import Wrapper from "../Wrapper"
 
 // import Photos from "../../images.json"
 
@@ -10,7 +12,7 @@ import config from "../../config/firebaseconfig";
 import firebase from "firebase/app";
 import "firebase/database";
 
-let imageDataArr = [];
+// let imageDataArr = [];
 
 export default class DataLoaded extends React.Component {
   constructor(props) {
@@ -25,58 +27,50 @@ export default class DataLoaded extends React.Component {
   componentDidMount() {
     const app = firebase.initializeApp(config);
     const db = app.database();
+    const ref = db.ref("/postcards/");
 
     // make the following return a promise?
 
-    function getTheData() {
-      return new Promise(function (resolve, reject) {
-        db.ref("/postcards/")
-          .once("value")
-          .then(function (snapshot) {
-            imageDataArr = snapshot.val();
-            console.log(imageDataArr); // still logging the datat I want
-            if (imageDataArr !== []) {
-              return resolve();
-            } else {
-              return reject();
-            }
-            // giving error "Cannot read property 'setState' of undefined"
-          });
+    ref.once("value", (ss) => {
+      let dataNew = ss.val();
+      console.log("firebase returned data below");
+      console.log(dataNew);
+      this.setState({
+        data: dataNew,
+        isLoaded: true,
       });
-    }
-
-    getTheData().then(console.log("Resolved"));
-
-    // db.ref("/postcards/").on("value", (querySnapShot) => {
-    //   imageDataArr = querySnapShot.val();
-    //   console.log(imageDataArr);  // Logs the data I want :)
-    // });
-
-    // ?? maybe needs to return a promise and do .then(this.setState()) ???
-    console.log(this.state.data); // logs []
-    console.log(this.state.isLoaded); // logs false
+    });
   }
 
   render() {
-    if (!this.state.isLoaded) {
-      return <Loading />;
-    } else {
-      return this.state.data.map((photo, index) => {
-        return (
-          <div
-            className={`section section${index}`}
-            // style={CardStyle}
-            key={index}
-          >
-            <Card
-              src1={photo.image_src}
-              src2={photo.image_reverse}
-              alt={photo.alt}
-              text={photo.description}
-            />
-          </div>
-        );
-      });
-    }
+    // console.log(this.state.isLoaded);
+    // let isLoaded = this.state.isLoaded;
+    // if (isLoaded) {
+    //   console.log("rendered");
+    //   return <Loading />;
+    // } else console.log("re-rendered");
+    // return <Loaded />;
+  return  <Card />
   }
 }
+
+
+
+    
+      // return (isLoaded ? <Loaded /> : <Loading />)
+
+    // return this.state.data.map((photo, index) => {
+    //     <div
+    //       className={`section section${index}`}
+    //       // style={CardStyle}
+    //       key={index}
+    //     >
+    //       <Card
+    //         src1={photo.image_src}
+    //         src2={photo.image_reverse}
+    //         alt={photo.alt}
+    //         text={photo.description}
+    //       />
+    //     </div>
+    // })
+  // }

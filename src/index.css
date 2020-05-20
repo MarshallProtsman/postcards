@@ -49,13 +49,29 @@ li {
   align-items: left;
   margin: 15px;
 }
+.rear {
+  background-color: red;
+  top: 0;
+  left: 0;
+  opacity: 100;
+  position: relative;
+  z-index: 1;
+}
+
+.front {
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 50;
+  z-index: 2;
+}
 
 .main-title {
   display: flex;
   justify-content: left;
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, "helvetica", sans-serif;
   font-size: 9.57em;
-  color: #dc2c21;
+  color: #be1600;
   line-height: 130px;
 }
 
