@@ -9,13 +9,13 @@ export default class Card extends React.Component {
     this.state = {
       // displayFront: "",
       // displayRear: "none",
-      toggleClass: "",
+      toggleClass: "inactive",
     };
   }
 
   handleClick() {
     // this.setState({ displayFront: "none", displayRear: "" });
-    this.state.toggleClass === "front"
+    this.state.toggleClass === "inactive"
       ? this.setState({ toggleClass: "active" })
       : this.setState({ toggleClass: "inactive" });
   }
