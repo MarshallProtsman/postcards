@@ -49,7 +49,7 @@ li {
   align-items: left;
   margin: 15px;
 }
-.rear {
+.inactive {
   background-color: red;
   top: 0;
   left: 0;
@@ -58,7 +58,7 @@ li {
   z-index: 1;
 }
 
-.front {
+.active {
   position: relative;
   top: 0;
   left: 0;
