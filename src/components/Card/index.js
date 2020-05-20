@@ -6,8 +6,8 @@ export default class Card extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      toggleFrontClass: "inactive",
-      toggleRearClass: "active"
+      toggleFrontClass: "active",
+      toggleRearClass: "inactive"
     };
   }
 
@@ -20,7 +20,7 @@ export default class Card extends React.Component {
 
   render() {
     return (
-      <div className="direction">
+      <div className="direction flex-center">
         <div id="overlay"></div>
         <div className="card2 postcard">
           <img

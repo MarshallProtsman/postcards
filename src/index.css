@@ -49,21 +49,22 @@ li {
   align-items: left;
   margin: 15px;
 }
-.inactive {
-  background-color: red;
-  top: 0;
-  left: 0;
-  opacity: 100;
-  position: relative;
-  z-index: 1;
-}
 
 .active {
-  position: relative;
-  top: 0;
-  left: 0;
-  opacity: 50;
-  z-index: 2;
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  z-index: 1;
+  opacity: 100;
+}
+
+.inactive {
+  background-color: red;
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  z-index: 0;
+  opacity: 0;
 }
 
 .main-title {
