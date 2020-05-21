@@ -58,6 +58,23 @@ li {
   margin: 15px;
 }
 
+.active {
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  z-index: 1;
+  opacity: 100;
+}
+
+.inactive {
+  background-color: red;
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  z-index: 0;
+  opacity: 0;
+}
+
 .main-title {
   display: flex;
   justify-content: left;
