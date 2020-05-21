@@ -7,31 +7,15 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 import Photos from "../../images.json";
 
-// import IsLoaded from "../IsLoaded";
 import Card from "../Card";
 
 import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
 
-// import config from "../../config/firebaseconfig";
-// import firebase from "firebase/app";
 import "firebase/database";
 
-// import imageDataArr from "../../config/getFirebaseData";
-// import getFirebaseData from "../../config/getFirebaseData";
-
-// Background Image Styling
 const CardStyle = {
   backgroundImage: `url(${PaperBG})`,
 };
-
-// function waitToLog(x) {
-//   setTimeout(() => {
-//     console.log(`wait to log ${x / 1000} seconds`);
-//     console.log(imageDataArr);
-//   }, x);
-// }
-
-// waitToLog(2000);
 
 const Fullpage = () => (
   <ReactFullpage

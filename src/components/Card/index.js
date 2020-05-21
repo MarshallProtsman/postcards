@@ -6,38 +6,43 @@ export default class Card extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      toggleFrontClass: "inactive",
-      toggleRearClass: "active"
+      toggleFrontClass: "active",
+      toggleRearClass: "inactive",
     };
   }
 
   handleClick() {
     // this.setState({ displayFront: "none", displayRear: "" });
     this.state.toggleFrontClass === "active"
-      ? this.setState({ toggleFrontClass: "inactive",  toggleRearClass: "active" })
-      : this.setState({ toggleRearClass: "inactive", toggleFrontClass: "active" });
+      ? this.setState({
+          toggleFrontClass: "inactive",
+          toggleRearClass: "active",
+        })
+      : this.setState({
+          toggleRearClass: "inactive",
+          toggleFrontClass: "active",
+        });
   }
 
   render() {
     return (
-      <div className="direction">
-        <div id="overlay"></div>
-        <div className="card2 postcard">
+      <div className="postcard flex-center">
+        <div className="flex-child">
           <img
-            className={`image-scale flex-center ${this.state.toggleFrontClass}`}
+            className={`flex-child image-scale ${this.state.toggleFrontClass}`}
             onClick={this.handleClick}
             src={this.props.src1}
             alt={this.props.alt}
           ></img>
           <img
-            className={`image-scale flex-center ${this.state.toggleRearClass}`}
+            className={`image-scale ${this.state.toggleRearClass}`}
             onClick={this.handleClick}
             src={this.props.src2}
             alt={this.props.alt}
           ></img>
+          <br></br>
+          <p className="center-text">{this.props.text}</p>
         </div>
-        <br></br>
-        <p className="flex-center">{this.props.text}</p>
       </div>
     );
   }
