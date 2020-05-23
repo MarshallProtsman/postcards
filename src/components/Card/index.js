@@ -41,7 +41,8 @@ export default class Card extends React.Component {
             alt={this.props.alt}
           ></img>
           <br></br>
-          <p className="center-text">{this.props.text}</p>
+          <br></br>
+          <h5 className="center-text">{this.props.text}</h5>
         </div>
       </div>
     );

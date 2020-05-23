@@ -17,6 +17,10 @@ const CardStyle = {
   backgroundImage: `url(${PaperBG})`,
 };
 
+const Gray = {
+  filter: 'grayscale(100)',
+}
+
 const Fullpage = () => (
   <ReactFullpage
     //fullpage options
@@ -53,23 +57,25 @@ const Fullpage = () => (
 
           {/* Mapping over DB to render postcard slides */}
           {/* <IsLoaded /> */}
+          {/* {console.log(state.lastEvent)} */}
           {Photos.map((photo, index) => {
-              return (
-                <div
-                  className={`section section${index}`}
-                  style={CardStyle}
-                  key={index}
-                >
-                  <Card
-                    src1={photo.image_src}
-                    src2={photo.image_reverse}
-                    alt={photo.alt}
-                    text={photo.description}
-                  />
-                </div>
-              );
-            })
-          }
+            return (
+              <div
+                id={`postcard${index}`}
+                className={`section section${index}`}
+                style={CardStyle}
+                key={index}
+              >
+                <Card
+                  // onClick={logCurrentSection()}
+                  src1={photo.image_src}
+                  src2={photo.image_reverse}
+                  alt={photo.alt}
+                  text={photo.description}
+                />
+              </div>
+            );
+          })}
         </ReactFullpage.Wrapper>
       );
     }}
