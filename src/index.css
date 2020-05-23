@@ -17,6 +17,12 @@ h4 {
     sans-serif;
 }
 
+h5 {
+  font-family: -apple-system, Lora, Karla-Regular, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
 p {
   font-family: -apple-system, Lora, Karla-Regular, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -60,17 +66,12 @@ li {
 
 .active {
   position: fixed;
-  /* top: 0;
-  left: 0; */
   z-index: 1;
   opacity: 100;
 }
 
 .inactive {
-  background-color: red;
   position: fixed;
-  /* top: 0;
-  left: 0; */
   z-index: 0;
   opacity: 0;
 }
@@ -139,7 +140,7 @@ li {
 }
 
 .image-scale {
-  width: 100vh;
+  width: 100vw;
 }
 
 .direction {
@@ -192,8 +193,7 @@ li {
   left: 0;
   z-index: 1;
   opacity: 100;
-  transition: opacity .3s
-
+  transition: opacity 0.3s;
 }
 
 .inactive {
@@ -203,7 +203,7 @@ li {
   left: 0;
   z-index: 0;
   opacity: 0;
-  transition: opacity .3s
+  transition: opacity 0.3s;
 }
 
 .flex-child {
@@ -251,4 +251,148 @@ li {
   .image-scale {
     width: 90vw;
   }
+}
+
+/* I sincerely apologize for the following code.
+I hate it so much. I ran out of time and I had
+to get something working. It is so repetitive
+and not very performant. What I would do with
+more time is load some low-res grayscale images
+that will never really be seen closely. then
+toggle an opacity class on them and the color image
+ like I did with the front/rear images. */
+
+#postcard0 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard1 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard2 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard3 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard4 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard5 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard6 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard7 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard8 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard9 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard10 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard11 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard12 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard13 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+#postcard14 {
+  filter: grayscale(100);
+  transition: filter 0.5s;
+}
+.fp-viewing-1 #postcard0 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+
+.fp-viewing-2 #postcard1 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+.fp-viewing-3 #postcard2 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+
+.fp-viewing-4 #postcard3 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+.fp-viewing-5 #postcard4 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+
+.fp-viewing-6 #postcard5 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+.fp-viewing-7 #postcard6 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+
+.fp-viewing-8 #postcard7 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+.fp-viewing-9 #postcard8 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+.fp-viewing-10 #postcard9 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+.fp-viewing-11 #postcard10 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+.fp-viewing-12 #postcard11 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+.fp-viewing-13 #postcard12 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
+}
+.fp-viewing-14 #postcard13 {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+  transition-delay: 0.5s;
 }
