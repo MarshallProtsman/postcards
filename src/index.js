@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 // import FourOhFour from './components/404';
 import './index.css';
 import Fullpage from './components/Landing'
+import "firebase/database";
 
 // console.log(`ref === ${ref}`)
 // const routing = (
