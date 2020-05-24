@@ -1,25 +1,17 @@
 import React from "react";
 import "./Landing.css";
 import ReactFullpage from "@fullpage/react-fullpage";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-
 import Photos from "../../images.json";
-
 import Card from "../Card";
-
 import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
-
 import "firebase/database";
 
+// Inline CSS
 const CardStyle = {
   backgroundImage: `url(${PaperBG})`,
 };
-
-const Gray = {
-  filter: 'grayscale(100)',
-}
 
 const Fullpage = () => (
   <ReactFullpage
