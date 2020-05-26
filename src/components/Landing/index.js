@@ -19,8 +19,15 @@ const Fullpage = () => (
     licenseKey={"494BD911-8A8E42B4-8F69FCD9-30D8E5A8"}
     scrollingSpeed={700} /* Options here */
     navigation={true}
-    // onLeave={origin}
+    callbacks="onLeave"
     render={({ state, fullpageApi }) => {
+      console.log("render prop change", state); // eslint-disable-line no-console
+
+      if (state.callback === "onLeave") {
+        if (state.direction === "down") {
+          console.log("going down..." + state.origin.index);
+        }
+      }
       return (
         <ReactFullpage.Wrapper>
           <div className="section home-section" style={CardStyle} id="welcome">
@@ -60,6 +67,7 @@ const Fullpage = () => (
               >
                 <Card
                   // onClick={logCurrentSection()}
+                  index={index}
                   src1={photo.image_src}
                   src2={photo.image_reverse}
                   alt={photo.alt}

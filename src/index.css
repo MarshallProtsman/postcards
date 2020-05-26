@@ -27,15 +27,6 @@ p {
   font-family: -apple-system, Lora, Karla-Regular, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
-  width: 60%;
-}
-
-.center-text {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  max-width: 60%;
 }
 
 code {
@@ -52,6 +43,18 @@ li {
 }
 
 /* INDIVIDUAL COMPONENT STYLING */
+
+.center-text {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.body-text {
+  max-width: 80%;
+}
+
 .title {
   display: flex;
 }
@@ -62,18 +65,6 @@ li {
   justify-content: space-around;
   align-items: left;
   margin: 15px;
-}
-
-.active {
-  position: fixed;
-  z-index: 1;
-  opacity: 100;
-}
-
-.inactive {
-  position: fixed;
-  z-index: 0;
-  opacity: 0;
 }
 
 .main-title {
@@ -163,24 +154,6 @@ li {
   padding: "5px";
 }
 
-/* #welcome {
-  padding-left: 5em;
-} */
-
-/* .btm-cntr {
-  position: absolute;
-  bottom: 0;
-  padding-left: 39vw;
-} */
-
-#down-arrows {
-  animation-duration: 1s;
-  animation-name: bounce;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  rotate: 50;
-}
-
 .image-scale {
   width: 100vh;
 }
@@ -229,9 +202,6 @@ li {
     color: #dc2c21;
     line-height: 0.95em;
     width: 80%;
-    background: linear-gradient(to bottom, rgb(220, 44, 33), rgb(175, 37, 27));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .subtitle {
@@ -245,154 +215,220 @@ li {
   }
 
   .postcard {
-    width: 80vw;
+    width: 70vw;
   }
 
   .image-scale {
-    width: 90vw;
+    width: 70vw;
+  }
+  .body-text {
+    font-size: 12px;
+  }
+
+  .fp-tableCell {
+    display: flex;
+    align-items: center;
   }
 }
 
+/*Animation Station*/
+
+#down-arrows {
+  animation-duration: 1s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  rotate: 50;
+}
+
+/* DON'T WORRY ABOUT CALLBACKS NOW, JUST IMPLEMENT THE OPACITY TRANSITION.
+LAYER A FRON IMAGE WITH A GRAYSCALE/OPACITY CLASS AND TRANSITION THE OPACTY
+
+SAME SHIT, MORE PERFORMANT. */
+
 /* I sincerely apologize for the following code.
 I hate it so much. I ran out of time and I had
-to get something working. It is so repetitive
+to get something working. It is repetitive
 and not very performant. What I would do with
 more time is load some low-res grayscale images
 that will never really be seen closely. then
 toggle an opacity class on them and the color image
  like I did with the front/rear images. */
 
-#postcard0 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale0 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard1 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale1 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard2 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale2 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard3 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale3 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard4 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale4 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard5 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale5 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard6 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale6 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard7 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale7 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard8 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale8 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard9 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale9 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard10 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale10 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard11 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale11 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard12 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale12 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
-#postcard13 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale13 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
 }
-#postcard14 {
-  filter: grayscale(100);
-  transition: filter 0.5s;
+#grayscale14 {
+  position: absolute;
+  z-index: 2;
+  filter: grayscale();
+  opacity: 100%;
 }
-.fp-viewing-1 #postcard0 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+.fp-viewing-1 #grayscale0 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
 
-.fp-viewing-2 #postcard1 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+.fp-viewing-2 #grayscale1 {
+  opacity: 0;
+  transition: opacity 0.5s;
   transition-delay: 0.5s;
 }
-.fp-viewing-3 #postcard2 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
-  transition-delay: 0.5s;
-}
-
-.fp-viewing-4 #postcard3 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
-  transition-delay: 0.5s;
-}
-.fp-viewing-5 #postcard4 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+.fp-viewing-3 #grayscale2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
 
-.fp-viewing-6 #postcard5 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+.fp-viewing-4 #grayscale3 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
-.fp-viewing-7 #postcard6 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+.fp-viewing-5 #grayscale4 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
 
-.fp-viewing-8 #postcard7 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+.fp-viewing-6 #grayscale5 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
-.fp-viewing-9 #postcard8 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+.fp-viewing-7 #grayscale6 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
-.fp-viewing-10 #postcard9 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+
+.fp-viewing-8 #grayscale7 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
-.fp-viewing-11 #postcard10 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+.fp-viewing-9 #grayscale8 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
-.fp-viewing-12 #postcard11 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+.fp-viewing-10 #grayscale9 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
-.fp-viewing-13 #postcard12 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+.fp-viewing-11 #grayscale10 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
-.fp-viewing-14 #postcard13 {
-  filter: grayscale(0);
-  transition: filter 0.5s;
+.fp-viewing-12 #grayscale11 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 0.5s;
+}
+.fp-viewing-13 #grayscale12 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 0.5s;
+}
+.fp-viewing-14 #grayscale13 {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
   transition-delay: 0.5s;
 }
