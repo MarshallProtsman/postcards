@@ -38,13 +38,11 @@ export default class Card extends React.Component {
           ></img>
           <img
             className={`flex-child image-scale ${this.state.toggleFrontClass}`}
-            // onClick={this.handleClick}
             src={this.props.src1}
             alt={this.props.alt}
           ></img>
           <img
             className={`image-scale ${this.state.toggleRearClass}`}
-            // onClick={this.handleClick}
             src={this.props.src2}
             alt={this.props.alt}
           ></img>

@@ -241,19 +241,15 @@ li {
   rotate: 50;
 }
 
-/* DON'T WORRY ABOUT CALLBACKS NOW, JUST IMPLEMENT THE OPACITY TRANSITION.
-LAYER A FRON IMAGE WITH A GRAYSCALE/OPACITY CLASS AND TRANSITION THE OPACTY
-
-SAME SHIT, MORE PERFORMANT. */
-
 /* I sincerely apologize for the following code.
 I hate it so much. I ran out of time and I had
 to get something working. It is repetitive
-and not very performant. What I would do with
-more time is load some low-res grayscale images
-that will never really be seen closely. then
-toggle an opacity class on them and the color image
- like I did with the front/rear images. */
+and not very performant (though the transition
+being on the opacity and not on the filter property
+is a performance boost). What I would do with
+more time is actually solve the propblem
+programatically. Figure out a callback on the
+fullbage move section down */
 
 #grayscale0 {
   position: absolute;

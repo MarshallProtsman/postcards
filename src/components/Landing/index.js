@@ -29,11 +29,11 @@ const Fullpage = () => (
         }
       }
       return (
-        <ReactFullpage.Wrapper>
+        <ReactFullpage.Wrapper >
           <div className="section home-section" style={CardStyle} id="welcome">
             <div className="content-style">
               <div className="title">
-                <p className="main-title">
+                <p className="main-title" >
                   Postcards<br></br>from<br></br>my<br></br>grandfather.
                 </p>
                 <br></br>
