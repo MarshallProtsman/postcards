@@ -2,7 +2,7 @@
 
 By Marshall Protsman, Great Grandson of Tommy Protsman (founder: Stone Mountain Park Auto Museum).
 
-Special thanks to Cody Goss and John Robertson for helping me solve issues an for teaching me a lot. An thanks to Heather Troutman for design help
+Special thanks to Cody Goss and John Robertson for helping me solve issues an for teaching me a lot. And thanks to Heather Troutman for design help
 
 Thank you grandpa!
 
