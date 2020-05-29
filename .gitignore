@@ -9,6 +9,14 @@ project_files/
 
 config/
 
-# firebaseconfig.js
-
 .firebase/
+
+images-compressed/
+
+src/components/IsLoaded
+
+src/components/Loaded
+
+src/components/Loading
+
+src/components/NavMenu

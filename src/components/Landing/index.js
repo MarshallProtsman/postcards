@@ -13,6 +13,10 @@ const CardStyle = {
   backgroundImage: `url(${PaperBG})`,
 };
 
+// const Top = {
+//   display
+// }
+
 const Fullpage = () => (
   <ReactFullpage
     //fullpage options
@@ -29,11 +33,11 @@ const Fullpage = () => (
         }
       }
       return (
-        <ReactFullpage.Wrapper >
+        <ReactFullpage.Wrapper>
           <div className="section home-section" style={CardStyle} id="welcome">
             <div className="content-style">
               <div className="title">
-                <p className="main-title" >
+                <p className="main-title">
                   Postcards<br></br>from<br></br>my<br></br>grandfather.
                 </p>
                 <br></br>
@@ -41,6 +45,10 @@ const Fullpage = () => (
                   The Stone Mountain Park Auto Museum
                 </h4>
               </div>
+              <p>
+                A collection of antique postcards from my Grandfather's auto
+                museum in Stone Mountain Park
+              </p>
               <div className="btm-cntr">
                 <div
                   className="btm-cntr"
@@ -73,6 +81,11 @@ const Fullpage = () => (
                   alt={photo.alt}
                   text={photo.description}
                 />
+                <div className="flex-right">
+                  <button className="to-top btn-clear" onClick={() => fullpageApi.moveTo()}>
+                    Go to Top
+                  </button>
+                </div>
               </div>
             );
           })}
