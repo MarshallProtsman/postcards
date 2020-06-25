@@ -6,6 +6,8 @@ Special thanks to Cody Goss and John Robertson for helping me solve issues an fo
 
 Thank you grandpa!
 
+Built using create-react-app
+
 Paper background downloaded from www.subtlepatterns.com
 
 favicon by Bohdan Burmich from Noun Project
