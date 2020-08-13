@@ -5,7 +5,8 @@
     "title": "Tommy And Elizabeth 1908 Buick",
     "alt": "Tommy And Elizabeth 1908 Buick",
     "description":
-      "A 1908 Buick Model X Roadster, 4 Cylinder, 18 Horse Power. Driven by my Great Grandparents"
+      "A 1908 Buick Model X Roadster, 4 Cylinder, 18 Horse Power. Driven by my Great Grandparents",
+      "bg_clr":"rgb(237, 232, 216)"
     },
   {
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1587406809/Postcards/FrontComp1_tcy2b9.png",
@@ -13,7 +14,8 @@
     "title": "Storefront of the auto museum",
     "alt": "Storefront of the auto museum",
     "description":
-      "A 1933 model C Ford Roadster and a 1930 Rolls Royce Town Car, 20-25 Series."
+      "A 1933 model C Ford Roadster and a 1930 Rolls Royce Town Car, 20-25 Series.",
+      "bg_clr":"rgb(189, 208, 204)"
   },
   {
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407123/Postcards/CoveredBridge/CoveredBridge_gf13sg.png",
@@ -21,7 +23,8 @@
     "title": "Hanson Touring by the Covered Bridge",
     "alt": "1920 Hanson Touring by the Covered Bridge",
     "description":
-      "This 1920 Hanson Touring was made in Atlanta Georgia."
+      "This 1920 Hanson Touring was made in Atlanta Georgia.",
+      "bg_clr":"rgb(208, 216, 219)"
   },
   {
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589406797/Postcards/Tucker/Tucker_krkl2i.png",
@@ -29,7 +32,8 @@
     "title": "Tucker",
     "alt": "1948 Tucker",
     "description":
-      "1948 Tucker featured in the movie, 'Tucker, A Man and His Dream', only 51 were made in Chicago, IL"
+      "1948 Tucker featured in the movie, 'Tucker, A Man and His Dream', only 51 were made in Chicago, IL",
+      "bg_clr":"rgb(232, 215, 203)"
   },
   {
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407127/Postcards/Stevens-Duryea/Stevens-Duryea_rkwj1t.png",
@@ -37,63 +41,72 @@
     "title": "Stevens-Duryea",
     "alt": "1903 Stevens-Duryea",
     "description":
-      "This is a 1903 Stevens-Duryea with a two passenger fold down seat in front."
+      "This is a 1903 Stevens-Duryea with a two passenger fold down seat in front.",
+      "bg_clr":"rgb(255, 233, 232)"
   },{
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407123/Postcards/Elvis/Elvis_aqqtq2.png",
     "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1590694410/Postcards/Resized%20Images/Elvis_R_itl8mr.png",
     "title": "Elvis",
     "alt": "Elvis",
     "description":
-      "The King"
+      "The King",
+      "bg_clr":"rgb(206, 217, 239)"
   },{
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407127/Postcards/Peerless/Peerless_fr4zxc.png",
     "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1590694412/Postcards/Resized%20Images/Peerless_R_ccv6r7.png",
     "title": "1917 Peerless",
     "alt": "Peerless",
     "description":
-      "1917 Peerless 7 passenger touring car, V-8 motor, 33 horsepower"
+      "1917 Peerless 7 passenger touring car, V-8 motor, 33 horsepower",
+      "bg_clr":"rgb(249, 233, 219)"
   },{
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407124/Postcards/GristMill/GristMill_ikfnyq.png",
     "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1590694410/Postcards/Resized%20Images/GristMill_R_pycx8x.png",
     "title": "Grist Mill",
     "alt": "Grist Mill",
     "description":
-      "The grist Mill at Stone Mountain Park"
+      "The grist Mill at Stone Mountain Park",
+      "bg_clr":"rgb(204, 219, 232)"
   },{
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407124/Postcards/Interior/Interior_bzd6va.png",
     "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1590694410/Postcards/Resized%20Images/Interior_R_wrywmu.png",
     "title": "Gift Shop",
     "alt": "The Gift Shop",
     "description":
-      "The gift shop of the Antique Auto and Music Museum"
+      "The gift shop of the Antique Auto and Music Museum",
+      "bg_clr":"rgb(240, 249, 219)"
   },{
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407124/Postcards/MuseumLoop/MuseumLoop_aahuqb.png",
     "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1590694411/Postcards/Resized%20Images/MuseumLoop_R_bpzgtn.png",
     "title": "Museum Loop",
     "alt": "The main loop of the museum",
     "description":
-      "The Main loop of the museum. Walk around "
+      "The Main loop of the museum. Walk around",
+      "bg_clr":"rgb(181, 204, 206)"
   },{
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407125/Postcards/Oldsmobile/Oldsmobile_aqippf.png",
     "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1590694411/Postcards/Resized%20Images/Oldsmobile_R_qmdk1b.png",
     "title": "1904 Oldsmobile",
     "alt": "1904 Oldsmobile",
     "description":
-      "1904 Curved Dash Oldsmobile. One cylinder, chain, drive, 7 horsepower (restored by George Green)."
+      "1904 Curved Dash Oldsmobile. One cylinder, chain, drive, 7 horsepower (restored by George Green).",
+      "bg_clr":"rgb(197, 227, 234)"
   },{
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407125/Postcards/MusicRoom/MusicRoom_qazbxx.png",
     "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1590694411/Postcards/Resized%20Images/MusicRoom_R_uw0pw8.png",
     "title": "The Music Room",
     "alt": "The Music Room",
     "description":
-      "A 1914 Ford displayed in a parlor full to the brim with antique treasures"
+      "A 1914 Ford displayed in a parlor full to the brim with antique treasures",
+      "bg_clr":"rgb(227, 246, 252)"
   },{
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407126/Postcards/OldsmobileFront/OldsmobileFront_icm3sg.png",
     "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1590694411/Postcards/Resized%20Images/OldsmobileFront_R_ee2uvc.png",
     "title": "1904 Oldsmobile Truck",
     "alt": "1904 Oldsmobile Truck",
     "description":
-      "A 1904 curved dash Oldsmobile truck. One of the rarest American antique cars."
+      "A 1904 curved dash Oldsmobile truck. One of the most rare American antique cars.",
+      "bg_clr":"rgb(213, 240, 242)"
   },
   {
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407123/Postcards/Brass/Brass_w7lx8t.png",
@@ -101,6 +114,7 @@
     "title": "Brass Collection",
     "alt": "Brass Collection",
     "description":
-      "Considered to be the world's largest and finest collection of brass horns, head lamps, tail lamps, and motor meters."
+      "Considered to be the world's largest and finest collection of brass horns, head lamps, tail lamps, and motor meters.",
+      "bg_clr":"rgb(201, 210, 191)"
   }
 ]

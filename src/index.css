@@ -5,30 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(255, 246, 220);
+  background: rgb(226, 189, 173);
   color: rgb(0, 0, 0);
 }
 
 h1 {
   font-family: -apple-system, "Helvetica Neue", sans-serif;
-}
-
-h4 {
-  font-family: -apple-system, Lora, Karla-Regular, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-}
-
-h5 {
-  font-family: -apple-system, Lora, Karla-Regular, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-}
-
-p {
-  font-family: -apple-system, Lora, Karla-Regular, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
 }
 
 code {
@@ -55,6 +37,8 @@ li {
 
 .body-text {
   max-width: 80%;
+  color: rgb(56, 51, 46);
+  font-size: 1.3rem;
 }
 
 .title {
@@ -74,30 +58,37 @@ li {
   justify-content: left;
   font-family: -apple-system, "helvetica", sans-serif;
   font-size: 9.57em;
-  color: #be1600;
+  color: rgb(56, 51, 46);
   line-height: 130px;
+  margin-bottom: 5rem;
 }
 
 /* Individual sections */
 .home-section {
-  background-color: #e6dfd0;
+  /* background-color: #e6dfd0; */
   display: flex;
   /* justify-content: left; */
 }
 
-.section1 {
-  background-color: #def8ec;
-
-  /* background-image: url("https://www.publicdomainpictures.net/pictures/310000/velka/damask-vintage-background-wallpaper-1566400309WS6.jpg") ; */
-}
-
-.section0 {
-  background-color: rgb(255, 246, 220);
+.card-all {
+  background-color: rgb(214, 206, 202);
 }
 
 .content-style {
   display: flex;
   flex-direction: column;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  width: 75vw;
+  margin-left: 1rem;
+}
+
+.to-top {
+margin-right: 45px;
+border-style: solid;
+/* border-radius: 1px; */
 }
 
 /* FLEXING */
@@ -107,6 +98,7 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-left: calc(20% - 28px);
 }
 
 .flex-top {
@@ -138,10 +130,6 @@ li {
   color: inherit;
 }
 
-.image-scale {
-  width: 100vw;
-}
-
 .direction {
   display: flex;
   flex-direction: column;
@@ -162,8 +150,19 @@ li {
   padding: "5px";
 }
 
+.postcard {
+  width: 60vw;
+}
+
 .image-scale {
-  width: 55vw;
+  width: 60vw;
+}
+
+.fp-tableCell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /* IMAGE TOGGLE CLASSES */
@@ -191,6 +190,7 @@ li {
   position: relative;
 }
 
+
 @keyframes bounce {
   from {
     transform: translateY(20%);
@@ -207,7 +207,6 @@ li {
     justify-content: left;
     font-family: -apple-system, "Helvetica Neue", sans-serif;
     font-size: 12vw;
-    color: #dc2c21;
     line-height: 0.95em;
     width: 80%;
   }
@@ -218,8 +217,8 @@ li {
 
   .subtitle {
     font-size: 4vw;
-    width: 50vw;
-    margin-left: 5px;
+    width: 75vw;
+    margin-left: 1rem;
   }
 
   .title {
@@ -233,8 +232,9 @@ li {
   .image-scale {
     width: 70vw;
   }
+  
   .body-text {
-    font-size: 12px;
+    font-size: 1em;
   }
 
   .fp-tableCell {

@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Photos from "../../images.json";
 import Card from "../Card";
-import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
+// import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
 import "firebase/database";
 
-// Inline CSS
-const CardStyle = {
-  backgroundImage: `url(${PaperBG})`,
-};
+// // Inline CSS
+// const CardStyle = {
+//   backgroundImage: `url(${PaperBG})`,
+// };
 
 // const Top = {
 //   display
@@ -34,20 +34,19 @@ const Fullpage = () => (
       }
       return (
         <ReactFullpage.Wrapper>
-          <div className="section home-section" style={CardStyle} id="welcome">
+          <div className="section home-section" id="welcome">
             <div className="content-style">
               <div className="title">
                 <p className="main-title">
-                  Postcards<br></br>from<br></br>my<br></br>grandfather.
+                  Postcards <br></br> Project
                 </p>
                 <br></br>
-                <h4 className="flex-left subtitle">
-                  The Stone Mountain Park Auto Museum
-                </h4>
               </div>
-              <p>
-                A collection of antique postcards from my Grandfather's auto
-                museum in Stone Mountain Park
+              <p className="flex-left subtitle">
+              In 1963 my grandfather founded the Stone Mountain Antique Car and Treasure Musuem, 
+              which would ultimately house over 4,000 antiques and treasures. Throughout the 
+              46 years it was open, it served as a physical time capsule of the past. Following 
+              my grandfathers death in 2018, I found these postcards
               </p>
               <div className="btm-cntr">
                 <div
@@ -69,9 +68,9 @@ const Fullpage = () => (
             return (
               <div
                 id={`postcard${index}`}
-                className={`section section${index}`}
-                style={CardStyle}
+                className={`section section${index} card-all`}
                 key={index}
+                style={{backgroundColor: `${photo.bg_clr}`}}
               >
                 <Card
                   // onClick={logCurrentSection()}
@@ -83,7 +82,7 @@ const Fullpage = () => (
                 />
                 <div className="flex-right">
                   <button className="to-top btn-clear" onClick={() => fullpageApi.moveTo()}>
-                    Go to Top
+                    TOP
                   </button>
                 </div>
               </div>
