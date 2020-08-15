@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(226, 189, 173);
+  background: rgb(207, 155, 132);
   color: rgb(0, 0, 0);
 }
 
@@ -26,6 +26,11 @@ li {
   list-style-type: none;
 }
 
+button {
+  font-family: -apple-system, "helvetica", sans-serif;
+  color: rgb(56, 51, 46);
+}
+
 /* INDIVIDUAL COMPONENT STYLING */
 
 .center-text {
@@ -38,7 +43,7 @@ li {
 .body-text {
   max-width: 80%;
   color: rgb(56, 51, 46);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .title {
@@ -53,14 +58,25 @@ li {
   margin: 15px;
 }
 
-.main-title {
+#main-title-1 {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   font-family: -apple-system, "helvetica", sans-serif;
-  font-size: 9.57em;
+  font-size: 6em;
   color: rgb(56, 51, 46);
-  line-height: 130px;
-  margin-bottom: 5rem;
+  text-align: center;
+  line-height: 100px;
+  margin-bottom: 0px;
+}
+
+#main-title-2 {
+  display: flex;
+  justify-content: center;
+  font-family: -apple-system, "helvetica", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: rgb(56, 51, 46);
+  margin-bottom: 2rem;
 }
 
 /* Individual sections */
@@ -77,18 +93,19 @@ li {
 .content-style {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .subtitle {
   font-size: 1.2em;
   width: 75vw;
   margin-left: 1rem;
+  text-align: center;
 }
 
 .to-top {
-margin-right: 45px;
-border-style: solid;
-/* border-radius: 1px; */
+  margin-right: 45px;
+  font-weight: 800;
 }
 
 /* FLEXING */
@@ -190,6 +207,24 @@ border-style: solid;
   position: relative;
 }
 
+.nav-arrows {
+  position: relative;
+  font-size: 4vw;
+  font-weight: 200;
+  color: rgb(56, 51, 46);
+  width: 100vw;
+  height: 100px;
+  transform: translateX(50%);
+}
+
+#top-arrow {
+  margin-left: auto;
+  transform: rotate(180deg);
+}
+
+#bottom-arrow {
+  margin: auto;
+}
 
 @keyframes bounce {
   from {
@@ -211,10 +246,6 @@ border-style: solid;
     width: 80%;
   }
 
-  .flex-center {
-    margin-left: calc(18% - 28px);
-  }
-
   .subtitle {
     font-size: 4vw;
     width: 75vw;
@@ -232,7 +263,7 @@ border-style: solid;
   .image-scale {
     width: 70vw;
   }
-  
+
   .body-text {
     font-size: 1em;
   }

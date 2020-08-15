@@ -5,17 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Photos from "../../images.json";
 import Card from "../Card";
-// import PaperBG from "../../images/assets/groovepaper/groovepaper.png";
 import "firebase/database";
 
 // // Inline CSS
-// const CardStyle = {
-//   backgroundImage: `url(${PaperBG})`,
-// };
-
-// const Top = {
-//   display
-// }
 
 const Fullpage = () => (
   <ReactFullpage
@@ -37,16 +29,16 @@ const Fullpage = () => (
           <div className="section home-section" id="welcome">
             <div className="content-style">
               <div className="title">
-                <p className="main-title">
-                  Postcards <br></br> Project
-                </p>
+                <p id="main-title-1">POSTCARDS</p>
+                <p id="main-title-2">PROJECT</p>
                 <br></br>
               </div>
               <p className="flex-left subtitle">
-              In 1963 my grandfather founded the Stone Mountain Antique Car and Treasure Musuem, 
-              which would ultimately house over 4,000 antiques and treasures. Throughout the 
-              46 years it was open, it served as a physical time capsule of the past. Following 
-              my grandfathers death in 2018, I found these postcards
+                In 1963 my grandfather founded the Stone Mountain Antique Car
+                and Treasure Musuem, which would ultimately house over 4,000
+                antiques and treasures. Throughout the 46 years it was open, it
+                served as a physical time capsule of the past. Following my
+                grandfathers death in 2018, I found these postcards
               </p>
               <div className="btm-cntr">
                 <div
@@ -60,20 +52,25 @@ const Fullpage = () => (
               </div>
             </div>
           </div>
-
-          {/* Mapping over DB to render postcard slides */}
-          {/* <IsLoaded /> */}
-          {/* {console.log(state.lastEvent)} */}
           {Photos.map((photo, index) => {
             return (
               <div
                 id={`postcard${index}`}
                 className={`section section${index} card-all`}
                 key={index}
-                style={{backgroundColor: `${photo.bg_clr}`}}
+                style={{ backgroundColor: `${photo.bg_clr}` }}
               >
+                <div
+                  id="top-arrow"
+                  className="flex-center"
+                  onClick={() => fullpageApi.moveSectionUp()}
+                >
+                  <FontAwesomeIcon
+                    className="nav-arrows"
+                    icon={faChevronDown}
+                  />
+                </div>
                 <Card
-                  // onClick={logCurrentSection()}
                   index={index}
                   src1={photo.image_src}
                   src2={photo.image_reverse}
@@ -81,9 +78,18 @@ const Fullpage = () => (
                   text={photo.description}
                 />
                 <div className="flex-right">
-                  <button className="to-top btn-clear" onClick={() => fullpageApi.moveTo()}>
-                    TOP
+                  <button
+                    className="to-top btn-clear"
+                    onClick={() => fullpageApi.moveTo()}
+                  >
+                    BACK TO TOP
                   </button>
+                  <FontAwesomeIcon
+                    id="bottom-arrow"
+                    className="nav-arrows"
+                    icon={faChevronDown}
+                    onClick={() => fullpageApi.moveSectionDown()}
+                  />
                 </div>
               </div>
             );

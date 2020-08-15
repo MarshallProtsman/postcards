@@ -27,15 +27,6 @@
       "bg_clr":"rgb(208, 216, 219)"
   },
   {
-    "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589406797/Postcards/Tucker/Tucker_krkl2i.png",
-    "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1590694412/Postcards/Resized%20Images/Tucker_R_xkpwl9.png",
-    "title": "Tucker",
-    "alt": "1948 Tucker",
-    "description":
-      "1948 Tucker featured in the movie, 'Tucker, A Man and His Dream', only 51 were made in Chicago, IL",
-      "bg_clr":"rgb(232, 215, 203)"
-  },
-  {
     "image_src": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1589407127/Postcards/Stevens-Duryea/Stevens-Duryea_rkwj1t.png",
     "image_reverse": "https://res.cloudinary.com/dxf0lgyn4/image/upload/v1590694412/Postcards/Resized%20Images/Stevens-Duryea_R_ptidgg.png",
     "title": "Stevens-Duryea",
