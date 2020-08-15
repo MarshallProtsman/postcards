@@ -173,6 +173,7 @@ button {
 
 .image-scale {
   width: 60vw;
+  max-width: 720px;
 }
 
 .fp-tableCell {
