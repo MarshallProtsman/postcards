@@ -1,11 +1,10 @@
 import React from "react";
 import "./Landing.css";
 import ReactFullpage from "@fullpage/react-fullpage";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Photos from "../../images.json";
 import Card from "../Card";
 import "firebase/database";
+import Chevron from "../../images/assets/SVG/Asset2.svg";
 
 // // Inline CSS
 
@@ -37,17 +36,30 @@ const Fullpage = () => (
                 In 1963 my grandfather founded the Stone Mountain Antique Car
                 and Treasure Musuem, which would ultimately house over 4,000
                 antiques and treasures. Throughout the 46 years it was open, it
-                served as a physical time capsule of the past. Following my
-                grandfathers death in 2018, I found these postcards
+                served as a time capsule of the past. Following my grandfathers
+                death in 2018, I found these postcards
               </p>
+              {/* <p className="subtitle">....</p> */}
+              <div
+                id="down-arrows"
+                onClick={() => fullpageApi.moveSectionDown()}
+              >
+                <div className="flex-center"></div>
+                <img
+                  className="nav-arrows"
+                  src={Chevron}
+                  alt="chevron"
+                  // id="bottom-arrow"
+                ></img>
+              </div>
               <div className="btm-cntr">
                 <div
                   className="btm-cntr"
                   onClick={() => fullpageApi.moveSectionDown()}
                 >
-                  <p className="scroll">Scroll down</p>
+                  {/* <p className="scroll">Scroll down</p>
                   <FontAwesomeIcon id="down-arrows" icon={faChevronDown} />
-                  <p className="fas fa-sort-down" id="down-arrows"></p>
+                  <p className="fas fa-sort-down" id="down-arrows"></p> */}
                 </div>
               </div>
             </div>
@@ -65,10 +77,7 @@ const Fullpage = () => (
                   className="flex-center"
                   onClick={() => fullpageApi.moveSectionUp()}
                 >
-                  <FontAwesomeIcon
-                    className="nav-arrows"
-                    icon={faChevronDown}
-                  />
+                  <img className="nav-arrows" src={Chevron} alt="chevron"></img>
                 </div>
                 <Card
                   index={index}
@@ -77,6 +86,19 @@ const Fullpage = () => (
                   alt={photo.alt}
                   text={photo.description}
                 />
+
+                <div
+                  id="bottom-arrow"
+                  className="flex-center"
+                  onClick={() => fullpageApi.moveSectionDown()}
+                >
+                  <img
+                    className="nav-arrows"
+                    src={Chevron}
+                    alt="chevron"
+                    // id="bottom-arrow"
+                  ></img>
+                </div>
                 <div className="flex-right">
                   <button
                     className="to-top btn-clear"
@@ -84,12 +106,6 @@ const Fullpage = () => (
                   >
                     BACK TO TOP
                   </button>
-                  <FontAwesomeIcon
-                    id="bottom-arrow"
-                    className="nav-arrows"
-                    icon={faChevronDown}
-                    onClick={() => fullpageApi.moveSectionDown()}
-                  />
                 </div>
               </div>
             );
